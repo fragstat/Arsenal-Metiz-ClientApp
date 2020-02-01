@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoInternetActivity"
+    android:background="@android:color/holo_red_dark">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="220sp"
+        android:layout_marginTop="75sp"
+        android:src="@drawable/nointernet"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:text="Проверьте интернет соединение"
+        android:maxLines="4"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_marginTop="25sp"
+        android:fontFamily="@font/gilroy"
+        android:textColor="@android:color/black"
+        />
+    <Button
+        android:id="@+id/noInternetToMainButton"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="25sp"
+        android:layout_marginBottom="45sp"
+        android:layout_marginRight="25sp"
+        android:background="@drawable/cornersv2"
+        android:textColor="@android:color/black"
+        android:text="На главную"
+        android:textStyle="bold"
+        android:fontFamily="@font/gilroy"
+        android:textSize="25sp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

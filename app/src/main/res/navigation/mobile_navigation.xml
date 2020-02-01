@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/blankFragment">
+
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="arsenal.metiz.catalog.BlankFragment"
+        android:label="activity_list"
+        tools:layout="@layout/activity_list" />
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="arsenal.metiz.catalog.BlankFragment2"
+        android:label="activity_list"
+        tools:layout="@layout/activity_list" />
+    <fragment
+        android:id="@+id/blankFragment3"
+        android:name="arsenal.metiz.catalog.BlankFragment3"
+        android:label="activity_list"
+        tools:layout="@layout/activity_list" />
+    <action android:id="@+id/action_global_blankFragment3" app:destination="@id/blankFragment3"
+        app:popUpTo="@id/mobile_navigation"/>
+    <action android:id="@+id/action_global_blankFragment2" app:destination="@id/blankFragment2"
+        app:popUpTo="@id/mobile_navigation"/>
+    <action android:id="@+id/action_global_blankFragment" app:destination="@id/blankFragment"
+        app:popUpTo="@id/mobile_navigation"/>
+    <activity
+        android:id="@+id/requestActivity"
+        android:name="arsenal.metiz.catalog.RequestActivity"
+        android:label="activity_request"
+        tools:layout="@layout/activity_request" />
+</navigation>

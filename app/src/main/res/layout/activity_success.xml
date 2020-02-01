@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuccessActivity"
+    android:background="@color/colorPrimary">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="350sp"
+        android:src="@drawable/success"
+        android:paddingTop="80sp"
+        android:paddingLeft="80sp"
+        android:paddingRight="80sp"
+        android:paddingBottom="10sp"
+        android:foregroundGravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/completed"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Заявка отправлена"
+        android:fontFamily="@font/gilroy"
+        android:textSize="32sp"
+        android:layout_marginTop="25sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        />
+
+        <Button
+        android:id="@+id/toMain"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        app:layout_constraintBottom_toTopOf="@id/toStatus"
+        android:layout_marginTop="40sp"
+        android:textColor="@android:color/black"
+        android:text="На главную"
+        android:textSize="18sp"
+        android:background="@drawable/corners"
+        android:layout_marginLeft="35sp"
+        android:layout_marginRight="35sp"
+            android:layout_marginBottom="40sp"
+            android:fontFamily="@font/gilroy"
+        />
+
+    <Button
+        android:id="@+id/toStatus"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="40sp"
+        android:textColor="@android:color/black"
+        android:text="Проверить статус заявки"
+        android:textSize="18sp"
+        android:layout_marginBottom="70sp"
+        android:background="@drawable/corners"
+        android:layout_marginLeft="35sp"
+        android:layout_marginRight="35sp"
+        android:fontFamily="@font/gilroy"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

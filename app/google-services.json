@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "212978119548",
+    "firebase_url": "https://arsenal-metiz.firebaseio.com",
+    "project_id": "arsenal-metiz",
+    "storage_bucket": "arsenal-metiz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212978119548:android:4164e5d6c752b8dae2aaf9",
+        "android_client_info": {
+          "package_name": "arsenal.metiz.catalog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212978119548-kt84tl7k9met7ngocftak6u1mk5v3l70.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "arsenal.metiz.catalog",
+            "certificate_hash": "44c691a1b4222f4fb662d159de244fdfbf25bacd"
+          }
+        },
+        {
+          "client_id": "212978119548-7t38ig6oi6k9gjo1m3e2f6nhklh972nh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "arsenal.metiz.catalog",
+            "certificate_hash": "98c02928681272d01faf4b2fbfbd37f97c1a9829"
+          }
+        },
+        {
+          "client_id": "212978119548-o8389vmgi99bvp5gre93ta5l9ah415c1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKzjUGjHW4J-CFniukhfUTWY7Gq6VWWi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212978119548-o8389vmgi99bvp5gre93ta5l9ah415c1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

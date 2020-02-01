@@ -1,0 +1,140 @@
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/requestNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заявка №ХХХ"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginStart="5sp" />
+
+    <TextView
+        android:id="@+id/Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/requestNumber"
+        android:text="Марка:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginStart="5sp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/mType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/requestNumber"
+        android:text="Св-08Г2С"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginStart="5sp"
+        app:layout_constraintStart_toEndOf="@id/Type"/>
+
+    <TextView
+        android:id="@+id/Diameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Type"
+        android:text="Диаметр:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginStart="5sp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/mDiameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mType"
+        android:text="5.0"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginStart="5sp"
+        app:layout_constraintStart_toEndOf="@id/Diameter"/>
+
+    <TextView
+        android:id="@+id/Package"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Diameter"
+        android:text="Упаковка:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginStart="5sp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/mPackage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mDiameter"
+        android:text="К300/Д300"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginStart="5sp"
+        app:layout_constraintStart_toEndOf="@id/Package"/>
+
+    <TextView
+    android:id="@+id/Layer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/Package"
+    android:text="Покрытие:"
+    android:textColor="@android:color/black"
+    android:textSize="18sp"
+    android:textStyle="italic"
+    android:layout_marginStart="5sp"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/mLayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mPackage"
+        android:text="В работе"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginStart="5sp"
+        app:layout_constraintStart_toEndOf="@id/Layer"/>
+
+    <TextView
+        android:id="@+id/Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Layer"
+        android:text="Статус:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginStart="5sp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/mStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mLayer"
+        android:text="В работе"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginStart="5sp"
+        app:layout_constraintStart_toEndOf="@id/Status"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotInTheBaseActivity"
+    android:background="@android:color/holo_red_dark">
+
+    <TextView
+        android:id="@+id/nItBaMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ошибка при сканировании: неверный QR код или сертификат не найден в базе "
+        android:fontFamily="@font/gilroy"
+        android:textSize="35sp"
+        android:layout_marginLeft="12sp"
+        android:layout_marginRight="12sp"
+        android:layout_marginTop="55sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/nItBaHint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Повторите сканирование или проверьте правильность сканирования QR кода"
+    android:fontFamily="@font/gilroy"
+    android:textSize="32sp"
+    android:layout_marginLeft="12sp"
+    android:layout_marginRight="12sp"
+    android:layout_marginTop="55sp"
+    android:textStyle="italic"
+    app:layout_constraintTop_toBottomOf="@id/nItBaMessage"
+    android:gravity="center"
+    android:textColor="@android:color/white"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toMainNiTbA"
+        android:text="На главную"
+        android:background="@drawable/cornersv1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="45sp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/gilroy"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginBottom="15sp">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".RequestActivity">
+
+
+    <TextView
+        android:id="@+id/request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy"
+        android:gravity="center"
+        android:text="Запрос"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <TextView
+        android:id="@+id/Mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Марка:"
+        android:fontFamily="@font/gilroy"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15sp"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/request"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/mMark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15sp"
+        android:textStyle="italic"
+        android:layout_marginTop="5sp"
+        android:fontFamily="@font/gilroy"
+        android:layout_marginEnd="15sp"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/Mark"
+        app:layout_constraintStart_toStartOf="parent"
+        android:completionThreshold="0"/>
+
+    <TextView
+        android:id="@+id/Diameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Диаметр:"
+        android:fontFamily="@font/gilroy"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="22sp"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/mMark"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Spinner
+        android:id="@+id/mDiameter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15sp"
+        android:textStyle="normal"
+        android:layout_marginEnd="15sp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/Diameter"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/Package"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Упаковка:"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/gilroy"
+        android:layout_marginTop="22sp"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/mDiameter"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Spinner
+        android:id="@+id/mPackage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15sp"
+        android:textStyle="normal"
+        android:layout_marginEnd="15sp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/Package"
+        android:fontFamily="@font/gilroy"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/mType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поверхность:"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12sp"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/mPackage"
+        android:fontFamily="@font/gilroy"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    <RadioGroup
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/gilroy"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mType"
+        app:layout_constraintStart_toStartOf="@id/mPackage">
+
+        <RadioButton
+            android:id="@+id/But1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Омеднённая"
+            />
+
+        <RadioButton
+            android:id="@+id/But2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Полированная"/>
+
+
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Количество (кг):"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15sp"
+        android:fontFamily="@font/gilroy"
+        android:textStyle="bold"
+        android:layout_marginTop="2sp"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/type"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/mAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Кол-во"
+        android:fontFamily="@font/gilroy"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15sp"
+        android:textStyle="italic"
+        android:layout_marginEnd="15sp"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/Amount"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Название компании:"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/gilroy"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="22sp"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/mAmount"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/mName"
+        android:fontFamily="@font/gilroy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Название компании"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:textStyle="italic"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/Name"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mPriceR"
+        app:layout_constraintTop_toBottomOf="@id/mInn"
+        android:text="Загрузка..."
+        android:gravity="center"
+        android:textSize="25sp"
+        android:fontFamily="@font/gilroy"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="25sp"
+        android:background="@drawable/cornersv1"
+        android:fontFamily="@font/gilroy"
+        android:text="@string/make_req"
+        android:textColor="@android:color/white"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@id/mPriceR"
+
+
+        />
+
+    <TextView
+        android:id="@+id/Email"
+        android:fontFamily="@font/gilroy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Контактный Email:"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="22sp"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/mName"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/mEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:textStyle="italic"
+        android:textSize="17sp"
+        android:fontFamily="@font/gilroy"
+        app:layout_constraintTop_toBottomOf="@id/Email"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/Inn"
+        android:fontFamily="@font/gilroy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ИНН:"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="22sp"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/mEmail"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/mInn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:textStyle="italic"
+        android:textSize="17sp"
+        android:fontFamily="@font/gilroy"
+        app:layout_constraintTop_toBottomOf="@id/Inn"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/checkStatus"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:fontFamily="@font/gilroy"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="25sp"
+        android:background="@drawable/cornersv1"
+        android:text="Проверить статус"
+        android:textColor="@android:color/white"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@id/send"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>

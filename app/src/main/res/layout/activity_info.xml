@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:paddingBottom="15sp"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".InfoActivity"
+        >
+
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:src="@drawable/remooved"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="14dp" />
+
+        <TextView
+            android:id="@+id/chemComp"
+            android:layout_width="match_parent"
+            android:layout_height="28sp"
+            android:layout_marginTop="15sp"
+            android:gravity="center"
+            android:paddingStart="12sp"
+            android:text="@string/chemComp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/gilroy"
+            app:layout_constraintTop_toBottomOf="@id/photo" />
+
+        <TextView
+            android:id="@+id/C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="C (Углерод): "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/gilroy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chemComp" />
+
+        <TextView
+            android:id="@+id/mC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="C "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/gilroy"
+            app:layout_constraintLeft_toRightOf="@id/C"
+            app:layout_constraintTop_toBottomOf="@id/chemComp" />
+
+        <TextView
+            android:id="@+id/Si"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="Si (кремний): "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/gilroy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/C" />
+
+        <TextView
+            android:id="@+id/mSi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="Si "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:fontFamily="@font/gilroy"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toRightOf="@id/Si"
+            app:layout_constraintTop_toBottomOf="@id/C" />
+
+        <TextView
+            android:id="@+id/Mn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="Mn (марганец): "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/gilroy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Si" />
+
+        <TextView
+            android:id="@+id/mMn"
+            android:fontFamily="@font/gilroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="Mn "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toRightOf="@id/Mn"
+            app:layout_constraintTop_toBottomOf="@id/Si" />
+
+        <TextView
+            android:id="@+id/Cr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="Cr (хром): "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:fontFamily="@font/gilroy"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Mn" />
+
+        <TextView
+            android:id="@+id/mCr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:fontFamily="@font/gilroy"
+            android:paddingStart="12sp"
+            android:text="Cr "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toRightOf="@id/Cr"
+            app:layout_constraintTop_toBottomOf="@id/Mn" />
+
+        <TextView
+            android:id="@+id/Ni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:fontFamily="@font/gilroy"
+            android:paddingStart="12sp"
+            android:text="Ni (никель): "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Cr" />
+
+        <TextView
+            android:id="@+id/mNi"
+            android:fontFamily="@font/gilroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="Ni "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toRightOf="@id/Ni"
+            app:layout_constraintTop_toBottomOf="@id/Cr" />
+
+        <TextView
+            android:id="@+id/Mo"
+            android:fontFamily="@font/gilroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="Mo (молибден): "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Ni" />
+
+        <TextView
+            android:id="@+id/mMo"
+            android:fontFamily="@font/gilroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="Mo "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toRightOf="@id/Mo"
+            app:layout_constraintTop_toBottomOf="@id/Ni" />
+
+        <TextView
+            android:id="@+id/Ti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:fontFamily="@font/gilroy"
+            android:text="Ti (титан): "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Mo" />
+
+        <TextView
+            android:id="@+id/mTi"
+            android:fontFamily="@font/gilroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="Ti "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toRightOf="@id/Ti"
+            app:layout_constraintTop_toBottomOf="@id/Mo" />
+
+        <TextView
+            android:id="@+id/S"
+            android:fontFamily="@font/gilroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="S (сера), не более: "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Ti" />
+
+        <TextView
+            android:id="@+id/mS"
+            android:fontFamily="@font/gilroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="S "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toRightOf="@id/S"
+            app:layout_constraintTop_toBottomOf="@id/Ti" />
+
+        <TextView
+            android:id="@+id/P"
+            android:fontFamily="@font/gilroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="P (фосфор), не более: "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/S" />
+
+        <TextView
+            android:id="@+id/mP"
+            android:fontFamily="@font/gilroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="P "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toRightOf="@id/P"
+            app:layout_constraintTop_toBottomOf="@id/S" />
+
+        <TextView
+            android:id="@+id/Other"
+            android:fontFamily="@font/gilroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="Прочие элементы: "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/P" />
+
+        <TextView
+            android:id="@+id/mOther"
+            android:fontFamily="@font/gilroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:paddingStart="12sp"
+            android:text="- "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toRightOf="@id/Other"
+            app:layout_constraintTop_toBottomOf="@id/P" />
+
+
+        <Button
+            android:id="@+id/link"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginBottom="1sp"
+            android:layout_marginRight="25sp"
+            android:background="@drawable/cornersv1"
+            android:text="Перейти на сайт"
+            android:fontFamily="@font/gilroy"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            app:layout_constraintTop_toBottomOf="@id/Other"
+
+
+            />
+
+
+
+        <Button
+            android:id="@+id/Elink"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="25sp"
+            android:background="@drawable/cornersv1"
+            android:text="@string/make_req"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:fontFamily="@font/gilroy"
+            app:layout_constraintTop_toBottomOf="@id/link"
+
+
+            />
+
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            app:barrierDirection="left" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
